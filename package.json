@@ -1,12 +1,12 @@
 {
-  "name": "view-in-browser",
-  "displayName": "View in Browser",
-  "description": "Adds \"View in Browser\" command for .html files",
-  "version": "1.0.1",
+  "name": "view-in-default-application",
+  "displayName": "View in Default Application",
+  "description": "Adds \"View in Default Application\" command for various files",
+  "version": "1.0.0",
   "publisher": "seesharprun",
   "repository": {
       "type" : "git",
-      "url" : "https://github.com/seesharprun/Code-View-In-Browser-Extension.git"
+      "url" : "https://github.com/seesharprun/Code-View-In-Default-Application-Extension.git"
   },
   "galleryBanner": {
       "color": "#91A3B0"
@@ -19,22 +19,18 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.viewInBrowser"
+    "onCommand:extension.viewInDefaultApp"
   ],
   "main": "./out/src/extension",
   "contributes": {
     "commands": [
         {
-            "command": "extension.viewInBrowser",
-            "title": "View In Browser"
-        },
-        {
-            "command": "extension.viewInBrowser",
+            "command": "extension.viewInDefaultApp",
             "title": "View In Default Application"
         }
     ],
     "keybindings": [{
-        "command": "extension.viewInBrowser",
+        "command": "extension.viewInDefaultApp",
         "key": "ctrl+k ctrl+b",
         "mac": "cmd+k cmd+b",
         "when": "editorTextFocus"

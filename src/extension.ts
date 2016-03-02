@@ -5,9 +5,9 @@ var open = require('open');
 
 export function activate(context: vscode.ExtensionContext) {
 
-	console.log('Congratulations, your extension "view-in-browser" is now active!');
+	console.log('Congratulations, your extension "view-in-default-application" is now active!');
 
-	let disposable = vscode.commands.registerCommand('extension.viewInBrowser', () => {
+	let disposable = vscode.commands.registerCommand('extension.viewInDefaultApp', () => {
 		var editor = vscode.window.activeTextEditor;
         if (!editor) {
             return; // No open text editor
