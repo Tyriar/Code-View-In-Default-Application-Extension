@@ -1,13 +1,44 @@
-# README
-## This is the README for your extension "view-in-browser" 
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+# View in Browser Extension
 
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
+This extension will allow you to view any HTML page in your operating system's default browser.
 
-### For more information
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+## Install
 
-** Enjoy!**
+You can browse and install this extension from within VS Code. Press ``F1`` and narrow down the list commands by typing ``extension``:
+
+![Install Extension Command](media/install_gallery_extension.png)
+
+Select the ``Extensions: Install Extension`` command.
+
+> **Tip:** As an alternative, press ``Ctrl+P`` and type ``ext install`` with a trailing space. 
+
+You will now see a list of extensions available in the gallery:
+
+![Gallery Extensions](media/gallery_extensions.png)
+
+Search for this extension by typing in the text ``view in browser``:
+
+![Search for Extension](media/extension_search.png)
+
+Once installed, you will be prompted to restart your instance of Visual Studio Code to use the extension:
+
+![Restart](media/restart_ide.png)
+
+## Using the Extension
+
+You can use the extension either by invoking the ``View in Browser`` command using the ``F1`` shortcut key:
+
+![Invoke Extension](media/invoke.png)
+
+Or by using the following keybindings:
+
+- Windows/Linux
+    - ``ctrl+k ctrl+b``
+- OSX
+    - ``cmd+k cmd+b``
+    
+## Credits
+
+Sidney Andrews
+- sidney@seesharprun.net
+- http://www.seesharprun.net

@@ -2,12 +2,13 @@
   "name": "view-in-browser",
   "displayName": "View in Browser",
   "description": "Adds \"View in Browser\" command for .html files",
-  "version": "0.0.3",
+  "version": "0.9.0",
   "publisher": "seesharprun",
   "repository": {
       "type" : "git",
       "url" : "https://github.com/seesharprun/Code-View-In-Browser-Extension.git"
   },
+  "icon": "media/seesharprun.png",
   "engines": {
     "vscode": "^0.10.6"
   },
