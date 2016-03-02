@@ -1,51 +1,63 @@
 {
-  "name": "view-in-default-application",
-  "displayName": "View in Default Application",
-  "description": "Adds \"View in Default Application\" command for various files",
-  "version": "1.0.0",
-  "publisher": "seesharprun",
-  "repository": {
-      "type" : "git",
-      "url" : "https://github.com/seesharprun/Code-View-In-Default-Application-Extension.git"
-  },
-  "galleryBanner": {
-      "color": "#91A3B0"
-  },
-  "icon": "media/seesharprun.png",
-  "engines": {
+    "name": "view-in-default-application",
+    "displayName": "View in Default Application",
+    "description": "Adds \"View in Default Application\" command for various files",
+    "version": "1.1.0",
+    "publisher": "seesharprun",
+    "license": "https://github.com/seesharprun/Code-View-In-Default-Application-Extension/blob/master/license",
+    "bugs": {
+        "url": "https://github.com/seesharprun/Code-View-In-Default-Application-Extension/issues"
+    },
+    "homepage": "http://www.seesharprun.net",
+    "repository": {
+        "type" : "git",
+        "url" : "https://github.com/seesharprun/Code-View-In-Default-Application-Extension.git"
+    },
+    "galleryBanner": {
+        "color": "#39617D",
+        "theme": "dark"
+    },
+    "icon": "media/seesharprun.png",
+    "engines": {
     "vscode": "^0.10.6"
-  },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [
-    "onCommand:extension.viewInDefaultApp"
-  ],
-  "main": "./out/src/extension",
-  "contributes": {
-    "commands": [
-        {
-            "command": "extension.viewInDefaultApp",
-            "title": "View In Default Application"
-        }
+    },
+    "categories": [
+        "Debuggers", "Other"
     ],
-    "keybindings": [{
-        "command": "extension.viewInDefaultApp",
-        "key": "ctrl+k ctrl+b",
-        "mac": "cmd+k cmd+b",
-        "when": "editorTextFocus"
-    }]
-  },
-  "scripts": {
-    "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
-    "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
-    "postinstall": "node ./node_modules/vscode/bin/install"
-  },
-  "devDependencies": {
-    "typescript": "^1.7.5",
-    "vscode": "^0.11.0"
-  },
-  "dependencies": {
-    "open": "0.0.5"
-  }
+    "activationEvents": [
+        "onCommand:extension.viewInDefaultApp"
+    ],
+    "main": "./out/src/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.viewInDefaultApp",
+                "title": "View In Default Application"
+            },
+            {
+                "command": "extension.viewInDefaultApp",
+                "title": "View In Browser"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "extension.viewInDefaultApp",
+                "key": "ctrl+k ctrl+b",
+                "mac": "cmd+k cmd+b",
+                "when": "editorTextFocus"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+        "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "typescript": "^1.7.5",
+        "vscode": "^0.11.0"
+    },
+    "dependencies": {
+        "open": "0.0.5"
+    }
 }
