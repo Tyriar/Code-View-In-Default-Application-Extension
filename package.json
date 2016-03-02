@@ -1,7 +1,7 @@
 {
   "name": "view-in-browser",
   "displayName": "seesharprun.view-in-browser",
-  "description": "View Web Pages in Your Default Browser",
+  "description": "Adds \"View in Browser\" command for .html files",
   "version": "0.0.2",
   "publisher": "seesharprun",
   "engines": {
@@ -11,16 +11,20 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.sayHello"
+    "onCommand:extension.viewInBrowser"
   ],
   "main": "./out/src/extension",
   "contributes": {
-    "commands": [
-      {
-        "command": "extension.sayHello",
-        "title": "Hello World"
-      }
-    ]
+    "commands": [{
+        "command": "extension.viewInBrowser",
+        "title": "View In Browser"
+    }],
+    "keybindings": [{
+        "command": "extension.viewInBrowser",
+        "key": "ctrl+k ctrl+b",
+        "mac": "cmd+k cmd+b",
+        "when": "editorTextFocus"
+    }]
   },
   "scripts": {
     "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
