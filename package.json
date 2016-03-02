@@ -2,7 +2,7 @@
   "name": "view-in-browser",
   "displayName": "View in Browser",
   "description": "Adds \"View in Browser\" command for .html files",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "seesharprun",
   "repository": {
       "type" : "git",
@@ -23,10 +23,16 @@
   ],
   "main": "./out/src/extension",
   "contributes": {
-    "commands": [{
-        "command": "extension.viewInBrowser",
-        "title": "View In Browser"
-    }],
+    "commands": [
+        {
+            "command": "extension.viewInBrowser",
+            "title": "View In Browser"
+        },
+        {
+            "command": "extension.viewInBrowser",
+            "title": "View In Default Application"
+        }
+    ],
     "keybindings": [{
         "command": "extension.viewInBrowser",
         "key": "ctrl+k ctrl+b",
