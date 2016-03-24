@@ -2,7 +2,7 @@
     "name": "view-in-default-application",
     "displayName": "View in Default Application",
     "description": "Adds \"View in Default Application\" command for various files",
-    "version": "1.1.0",
+    "version": "1.4.0",
     "publisher": "seesharprun",
     "license": "https://github.com/seesharprun/Code-View-In-Default-Application-Extension/blob/master/license",
     "bugs": {
@@ -10,8 +10,8 @@
     },
     "homepage": "http://www.seesharprun.net",
     "repository": {
-        "type" : "git",
-        "url" : "https://github.com/seesharprun/Code-View-In-Default-Application-Extension.git"
+        "type": "git",
+        "url": "https://github.com/seesharprun/Code-View-In-Default-Application-Extension.git"
     },
     "galleryBanner": {
         "color": "#39617D",
@@ -19,10 +19,11 @@
     },
     "icon": "media/seesharprun.png",
     "engines": {
-    "vscode": "^0.10.6"
+        "vscode": "^0.10.6"
     },
     "categories": [
-        "Debuggers", "Other"
+        "Debuggers",
+        "Other"
     ],
     "activationEvents": [
         "onCommand:extension.viewInDefaultApp"
