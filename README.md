@@ -2,6 +2,10 @@
 
 This extension will allow you to view any HTML page in your operating system's default browser.
 
+## NOVA Code Camp
+
+Check out my talk based on this project: https://speakerdeck.com/seesharprun/authoring-visual-studio-code-extensions
+
 ## Install
 
 You can browse and install this extension from within VS Code. Press ``F1`` and narrow down the list commands by typing ``extension``:
